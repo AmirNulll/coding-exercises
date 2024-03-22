@@ -6,7 +6,7 @@ const inputvalue = input.value;
 function getInputData() {
   if (inputvalue === "") {
     alert("you must write someting");
-  } else {
+  } else if (inputvalue === !"") {
     let li = document.createElement("li");
     li.innerHTML = inputvalue;
     listContainer.appendChild(li);
@@ -17,6 +17,7 @@ function getInputData() {
   inputvalue = "";
   saveData();
 }
+
 listContainer.addEventListener(
   "click",
   function (e) {
@@ -30,10 +31,11 @@ listContainer.addEventListener(
   },
   false
 );
+
 function saveData() {
   localStorage.setItem(data, listContainer.innerHTML);
 }
 function showData() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
-showData()
+showData();

@@ -6,7 +6,7 @@ const inputvalue = input.value;
 function getInputData() {
   if (inputvalue === "") {
     alert("you must write someting");
-  } else if (inputvalue === !"") {
+  } else if (inputvalue === !null) {
     let li = document.createElement("li");
     li.innerHTML = inputvalue;
     listContainer.appendChild(li);

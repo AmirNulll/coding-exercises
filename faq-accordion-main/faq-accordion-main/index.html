@@ -1,48 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ accordion</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>FAQ accordion</title>
 
-  FAQs
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="image">
+      <img src="./assets/images/background-pattern-desktop.svg" alt="" />
+    </div>
+    <div class="card">
+      <h1>
+        <img class="imgOne" src="./assets/images/icon-star.svg" alt="" />
+        <span> </span> FAQs
+      </h1>
+      <div class="questionsAndAnswers">
+        <div class="questions">
+          <h2>What is the best color for designing a logo?</h2>
 
-  What is Frontend Mentor, and how will it help me?
+          <button class="btn-plus btn-nag ">
+            <img src="./assets/images/icon-plus.svg" alt="" />
+          </button>
+        </div>
+        <div class="answers">
+          <h3>
+            The best color for designing a logo depends on the subject, purpose,
+            and brand identity. The color choice should reflect the brand's
+            characteristics and appeal.
+          </h3>
+        </div>
+      </div>
 
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
+      <div class="questionsAndAnswers">
+        <div class="questions">
+          <h2>What are the advantages of using Cloud Computing technology?</h2>
 
-  Is Frontend Mentor free?
+          <button  class="btn-plus btn-nag">
+            <img src="./assets/images/icon-plus.svg" alt="" />
+          </button>
+        </div>
+        <div class="answers">
+          <h3>
+            Using Cloud Computing technology provides easy access and high
+            scalability to computing resources, reduces capital expenses,
+            increases flexibility and efficiency, supports collaboration and
+            coordination among teams, and offers enhanced security compared to
+            traditional infrastructure.
+          </h3>
+        </div>
+      </div>
 
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
+      <div class="questionsAndAnswers">
+        <div class="questions">
+          <h2>What does it mean for a website to be optimized?</h2>
 
-  Can I use Frontend Mentor projects in my portfolio?
-
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
-
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <button  class="btn-plus btn-nag">
+            <img src="./assets/images/icon-plus.svg" alt="" />
+          </button>
+        </div>
+        <div class="answers">
+          <h3>
+            An optimized website means improving performance and loading speed,
+            enhancing user experience, improving accessibility, boosting search
+            engine rankings, and reducing server resource consumption. The
+            primary goal of website optimization is to enhance its functionality
+            and efficiency to meet user and search engine requirements.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>

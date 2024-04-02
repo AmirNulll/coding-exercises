@@ -1,6 +1,4 @@
-function shop() {
-  return(
-    <h1>shop</h1>
-  );
+function Shop() {
+  return <h1>shop</h1>;
 }
-export default shop;
+export default Shop;

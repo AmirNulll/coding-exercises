@@ -1,6 +1,6 @@
-function cart() {
+function Cart() {
 
   return <h1>cart</h1>;
 
 }
-export default cart;
+export default Cart;

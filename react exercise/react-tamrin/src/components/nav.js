@@ -1,4 +1,27 @@
-function nav() {
-  return <h1></h1>;
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+
+function Nav() {
+  return (
+    <div className="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div className="container">
+        <a className="navbar-brand">Shop Project</a>
+        <ul className="navbar-nav">
+          <li className="navbar-item">
+            <Link to="/" className="nav-link">
+                Shop
+            </Link>
+          </li>{" "}
+          <li className="navbar-item">
+            <Link to="/cart" className="nav-link">
+            <FontAwesomeIcon icon={faShoppingCart} />
+
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
-export default nav
+export default Nav;

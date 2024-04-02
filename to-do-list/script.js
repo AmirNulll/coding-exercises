@@ -1,12 +1,12 @@
 const input = document.querySelector(".js-input");
 const button = document.querySelector(".btn");
 const listContainer = document.querySelector(".list-container");
-const inputvalue = input.value;
 
 function getInputData() {
-  if (inputvalue === "") {
+  let inputvalue = input.value;
+  if (inputvalue.trim() === "") {
     alert("you must write someting");
-  } else if (inputvalue === !null) {
+  } else if (listContainer !== null) {
     let li = document.createElement("li");
     li.innerHTML = inputvalue;
     listContainer.appendChild(li);
@@ -33,7 +33,8 @@ listContainer.addEventListener(
 );
 
 function saveData() {
-  localStorage.setItem(data, listContainer.innerHTML);
+  console.log(listContainer);
+  localStorage.setItem("data", listContainer.innerHTML);
 }
 function showData() {
   listContainer.innerHTML = localStorage.getItem("data");

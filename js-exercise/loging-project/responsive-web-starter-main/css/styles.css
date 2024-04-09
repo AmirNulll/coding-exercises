@@ -40,7 +40,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
 }
 
 .cart {
@@ -66,54 +65,76 @@ input {
   border-radius: 10px;
   background-color: #212936;
   border: 3px solid #a1a1a97c;
-  font-weight:500;
+  font-weight: 500;
   color: white;
 }
 .input-div {
   margin: 30px 0px;
 }
-button{
-    background-color: #845EEE;
-    color: white;
-    padding: 13px 17px;
-    border-radius: 100px;
-    width: 130px;
-    border: none;
-    cursor: pointer;
+button {
+  background-color: #845eee;
+  color: white;
+  padding: 13px 17px;
+  border-radius: 100px;
+  width: 130px;
+  border: none;
+  cursor: pointer;
+}
+.button-div {
+  text-align: center;
+}
+.input-container {
+  margin: 50px 0px;
+}
+.steps {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-85%, -50%);
+}
+.num-step {
+  display: inline-block;
+  padding: 0px 25px;
+  color: #a1a1a979;
+}
+.step {
+  background-color: #a1a1a979;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0px 5px;
+  display: inline-block;
+}
+.one {
+  background-color: #845eee;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0px 5px;
+  display: inline-block;
+  box-shadow: 0px 0px 0px 5px #662cd17e;
+}
+.container label span {
+  display: block;
+  width: 370px;
+  margin: 20px 0px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #4d5562;
+  border: 3px solid #a1a1a97c;
+  cursor: pointer;
+}
+
+.container label input[type="checkbox"] {
+  display: none;
 
 }
-.button-div{
-    text-align: center;
+.container label span {
+  position: relative;
+  
+  
 }
-.input-container{
-    margin:50px 0px;
-}
-.steps{
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-85%, -50%);
-}
-.num-step{
-    display :inline-block;
-    padding: 0px 25px;
-    color: #a1a1a979;
-}
-.step{
-    background-color: #a1a1a979;
-    width: 10px;
-    height:10px;
-    border-radius: 50px;
-    margin: 0px 5px;
-    display: inline-block;
-
-}
-.one{
-    background-color: #845EEE;
-    width: 10px;
-    height:10px;
-    border-radius: 50px;
-    margin: 0px 5px;
-    display: inline-block;
-    box-shadow: 0px 0px 0px 5px #662cd17e;
+.container  input[type="checkbox"]:checked + span {
+  background-color: #845eee;
+  color: white;
 }
